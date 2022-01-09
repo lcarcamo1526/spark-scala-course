@@ -3,12 +3,13 @@ name := "SparkScalaCourse"
 version := "0.1"
 
 scalaVersion := "2.12.12"
+val sparkVersion = "3.2.0"
 
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-core" % "3.0.0",
-  "org.apache.spark" %% "spark-sql" % "3.0.0",
-  "org.apache.spark" %% "spark-mllib" % "3.0.0",
-  "org.apache.spark" %% "spark-streaming" % "3.0.0",
+  "org.apache.spark" %% "spark-core" % sparkVersion,
+  "org.apache.spark" %% "spark-sql" % sparkVersion,
+  "org.apache.spark" %% "spark-mllib" % sparkVersion,
+  "org.apache.spark" %% "spark-streaming" % sparkVersion,
   "org.twitter4j" % "twitter4j-core" % "4.0.4",
   "org.twitter4j" % "twitter4j-stream" % "4.0.4"
 )
